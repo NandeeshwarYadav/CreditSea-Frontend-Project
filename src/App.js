@@ -37,7 +37,7 @@ const App=()=>
         <AdminDashboard />
       </ProtectedRoute>
     } />
-    <Route path="/apply-loan" element={
+    <Route path="*" element={
       <ProtectedRoute>
         <LoanForm />
       </ProtectedRoute>

@@ -103,8 +103,6 @@ else if (!username || !tenure || !amountNeed || !reason || !employmentAddress ||
     
     }
 
-
-
     return <Bg>
            <Header/>
        <InnerBg>   
