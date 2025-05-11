@@ -5,12 +5,17 @@ export const Bg=styled.div`
   background-color: #fdf8f4;
   height: 100vh;
   background-size: cover;
+  font-family: 'Roboto';
+`
+
+export const InnerBg=styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto';
 `
+
+
 export const Card=styled.div`
     padding: 20px;
     background-color: #ffffff;

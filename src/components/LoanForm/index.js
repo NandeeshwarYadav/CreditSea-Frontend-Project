@@ -3,7 +3,9 @@ import {useState} from "react"
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie"
 
-import {Bg,Card,Heading,Form,FormSub,LabelInputContainer,TextInput,Label,FlexContainer,PolicyTermsContainer,PolicyTerms,Checkbox,SubmitButton} from "./styledComponents.js"
+import {Bg,InnerBg ,Card,Heading,Form,FormSub,LabelInputContainer,TextInput,Label,FlexContainer,PolicyTermsContainer,PolicyTerms,Checkbox,SubmitButton} from "./styledComponents.js"
+
+import Header from "../Header/index.js"
 
 const LoanForm= ()=>   {
 
@@ -103,7 +105,10 @@ else if (!username || !tenure || !amountNeed || !reason || !employmentAddress ||
 
 
 
-    return <Bg>   
+    return <Bg>
+           <Header/>
+       <InnerBg>   
+     
                 <Card>
                     <Heading>Apply For A Loan</Heading>
                     <Form onSubmit={OnSubmitForm}  > 
@@ -151,7 +156,8 @@ else if (!username || !tenure || !amountNeed || !reason || !employmentAddress ||
                     <SubmitButton type="submit">Submit</SubmitButton>
                     </Form>
                 </Card>
-            </Bg>
+            </InnerBg>
+    </Bg>
      
     
 }
