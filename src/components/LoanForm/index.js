@@ -60,7 +60,7 @@ const onChangeSecondPolicy=(event)=>{
     const OnSubmitForm=async (event)=>{
         event.preventDefault()
         
- if (!firstPolicy && !secondPolicy){
+ if (!firstPolicy || !secondPolicy){
     alert("Please accept the both policies before submitting the form!")
 }
 else if (!username || !tenure || !amountNeed || !reason || !employmentAddress || !employmentStatus || !employmentAddress){
