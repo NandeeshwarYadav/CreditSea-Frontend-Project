@@ -37,6 +37,11 @@ const onSubmitSuccess=(jwtToken,id,role)=>{
 
 }
 
+const onClickSignup=()=>{
+    navigate("/signup")
+}
+
+
 const onSubmitFailure=(errMsg)=>{
     setErrMsg(errMsg) 
 }
@@ -91,6 +96,7 @@ const onSubmitFailure=(errMsg)=>{
             <LoginButton type="submit">Login</LoginButton>
             {errMsg&& <ErrMsg>*{errMsg}*</ErrMsg> }
             </Form>
+                 <LoginButton type="button" onClick={onClickSignup}>Signup</LoginButton>
             </Card>
         </Bg>
 }

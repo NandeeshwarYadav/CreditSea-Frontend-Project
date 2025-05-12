@@ -1,7 +1,6 @@
 
 import {Route,Routes} from "react-router-dom"
 
-
 import './App.css';
 import LoanForm from './components/LoanForm';
 import SignUp from './components/SignUp'
@@ -18,9 +17,8 @@ const App=()=>
     <Route path="/login" element={<Login/>} />
 
     <Route path="/signup" element={
-      <ProtectedRoute>
-        <SignUp />
-      </ProtectedRoute>
+    <SignUp />
+
     } />
     <Route path="/user" element={
       <ProtectedRoute>

@@ -68,6 +68,7 @@ export const Bg=styled.div`
     border: 0px;
     color: #ffffff;
     border-radius: 5px;
+    margin-right : 10px;
 `
 
 export const ErrMsg=styled.p`
